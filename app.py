@@ -18,7 +18,7 @@ def index():
         suppcard = float(suppcard)
         print(purchases, suppcard)
         model1 = joblib.load("CART")
-        pred1 = model1.predicct([[purchases, suppcard]])
+        pred1 = model1.predict([[purchases, suppcard]])
         model2 = joblib.load("RF")
         pred2 = model2.predict([[purchases, suppcard]])
         model3 = joblib.load("GB")
