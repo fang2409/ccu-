@@ -27,6 +27,5 @@ def index():
     else:
         return(render_template("index.html", result1="2", result2="2", result3="2"))
 
-
 if __name__== "__main__":
    app.run()
